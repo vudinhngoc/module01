@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 10px;
+        }
+
+        input {
+            border: 1px solid black;
+            width: 200px;
+            height: 30px;
+            margin: 10px;
+        }
+
+        .noidung {
+            width: 500px;
+            border: 2px solid black;
+        }
+
+        .button {
+            width: 400px;
+            border-radius: 5px;
+            background-color: aqua;
+            transform: scale(1.2);
+            position: absolute;
+            left: 300px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>GỬi thông tin liên hệ cho chúng tôi</h1>
+        <p>bạn hãy điền nội dung tin nhắn vào form dưới đây.Chúng tôi sẽ trả lời bạn sau khi nhận được</p>
+        <div class="container">
+            <div>
+                <input type="text" placeholder="HỌ và tên" required><br>
+                <input type="email" placeholder="Email" required><br>
+                <input type="number" placeholder="số điện thoại" required><br>
+                <input type="text" placeholder="địa chỉ" required><br>
+            </div>
+            <div class="noidung">
+                <textarea name="" id="" placeholder="Nội dung"></textarea>
+            </div>
+        </div>
+        <button class="button">GỬi</button>
+    </div>
+
+
+</body>
+
+</html>

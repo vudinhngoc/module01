@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1 {
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 500px;
+            align-items: center;
+        }
+
+        .button {
+            border: none;
+        }
+
+        .input {
+            border: 1px solid blue;
+            width: 400px;
+            height: 20px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px blue;
+        }
+
+        .button1 {
+            border: 1px solid blue;
+            width: 400px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: rgb(41, 41, 121);
+            color: aliceblue;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .hoac {
+            position: absolute;
+            left: 200px;
+        }
+
+        .login {
+            border: 1px solid blue;
+            width: 400px;
+            height: 30px;
+            border-radius: 5px;
+            color: rgb(12, 13, 14);
+            text-align: center;
+            margin: 10px;
+        }
+
+        .footer {
+            display: flex;
+        }
+
+        a {
+            position: relative;
+            top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="container">
+            <h1>ĐĂng kí tài khoản</h1>
+            <button class="button">✕</button>
+        </div>
+        <div>
+            <form action="">
+                <label for="">số điện thoại</label><br>
+                <input type="number" required name="sđt" class="input"><br>
+                <button class="button1">tiếp tục</button><br>
+                <label for="" class="hoac">HOặc</label> <br>
+                <button class="login">đăng nhập với Facebook</button> <br>
+                <button class="login">đăng nhập với google</button> <br>
+            </form>
+            <div class="footer">
+                <p>bạn đã có tài khoản</p>
+                <a href="">đăng nhập</a>
+                <p>tại đây</p>
+            </div>
+
+        </div>
+
+</body>
+
+</html>

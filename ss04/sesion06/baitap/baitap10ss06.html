@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: rgb(199, 130, 130);
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .pardding {
+            padding: 20px;
+            border: 1px solid black;
+            background-color: white;
+            border-radius: 5px;
+
+        }
+
+        .container h4 {
+            text-align: center;
+        
+        }
+
+        .container1 {
+            display: flex;
+            
+            gap: 20px;
+            justify-content: center;
+        }
+
+        h3 {
+            text-align: center;
+            
+        }
+
+        .container1 button {
+            padding: 15px;
+            border-radius: 50px;
+        }
+
+        .container1 button:hover {
+            background-color: red;
+        }
+
+        .container2 {
+            
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: 50px;
+            justify-content: center;
+        }
+
+        .container2 input {
+            
+            height: 20px;
+            
+        }
+
+        .input {
+            width: 1150px;
+        }
+
+        .absolute {
+            position: absolute;
+            left: 1100px;
+        }
+        .div2{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h4>Feedback TA</h4>
+        <div class="pardding">
+            <h3>Thầy Phú dạy có hay không???</h3>
+            <div class="container1">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>10</button>
+            </div>
+            <div class="container2">
+                <input type="text" required placeholder="Nhập nội dung feedback" class="input">
+                <input type="submit" class="absolute">
+            </div>
+
+        </div>
+        <div class="div2 pardding">
+            <p>Quá tuyệt vời</p>
+            <button>✕</button>
+        </div>
+        <div class="div2 pardding">
+            <p>Thầy dạy rất hay!!</p>
+            <button>✕</button>
+        </div>
+    </div>
+</body>
+
+</html>

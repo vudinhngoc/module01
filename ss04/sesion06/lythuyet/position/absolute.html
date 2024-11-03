@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- position:absolute thì sẽ kiểm tra ông cha nào chứa nó chứa position khác static thì sẽ lấy vị trí của ông cha làm gốc
+     nếu không có thì sẽ lấy màn hình trình duyệt làm gốc -->
+    <style>
+.absolute{
+            width: 100px;
+            height: 100px;
+        background-color: red;
+       
+        
+        }
+        .parent{
+            width: 300px;
+            height: 300px;
+        background-color: rgb(180, 177, 177);
+        position: relative;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+        background-color:blue;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <div class="absolute">
+
+    </div>
+    <div class="parent">
+        <div class="box">
+
+        </div>
+    </div>
+    <div class="box">
+
+    </div>
+
+</body>
+</html>
