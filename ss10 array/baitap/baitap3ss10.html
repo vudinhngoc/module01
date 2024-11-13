@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let array = [5, 5, 5, 48, 1, 54, 541, 1, 5, 4, 5, 5, , 9, 8, 5];
+        let count = 0;
+        let value = +prompt("mời nhập số")
+        for (let i = 0; i <= array.length; i++) {
+            if (array[i] == value)
+                count++
+        }
+        if (count == 0) {
+            console.log("số này không xuất hiện");
+        } else{
+            console.log("số " + value, "xuất hiện" + count + "lần");
+        }
+    </script>
+</body>
+
+</html>

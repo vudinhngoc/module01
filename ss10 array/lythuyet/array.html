@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+<!-- các thành phần của mảng -->
+
+    <script>
+ // array:Mảng 1 biến lưu trữ đc NHIỀu GIÁ TRỊ -->
+
+ /////////////////////////////
+ // khai báo và khởi tạo kiểu tường minh 
+ //
+ let array=[1,2,3,4,5,6,7,8,9,10];
+ let  arrayString=[]
+/////////
+  // sử dụng đối tượng 
+  let array2= new Array(10);// sẽ ra mảng có 10 giá trị trống chưa ó giá trị
+////////////////////////////////*  */
+//các thành phần của mảng:
+//1:chỉ mục(index) (vị trí số thứ tự của phần tử): chạy từ 0
+//2:giá trị
+//mối quan hệ giữa 2 thành phần ( từ giá trị có thể suy ra vị trí)
+
+console.log(array[5]);//vị trí thứ 5 :giá trị là 6
+array[5]=100;//cách thay đổi giá trị
+console.log(array);
+
+/*  */
+// cách làm việc với mảng 
+//lấy ra độ dài mảng
+console.log("độ dài của mảng là" ,array.length);//thuộc tính length: hiện thị độ dài của mảng
+array.push(1000);//thêm phần tử vào cuối mảng
+console.log(array);
+///////////
+//duyệt mảng:
+// dùng for i
+for(let i=0;i<array.length;i++){
+    if(array[i]%3==0){
+        console.log("số chia hết cho 3 là",array[i]);
+        
+    }
+    //console.log('phần tử vị trí ',i ,"=",array[i]);
+}
+//
+// Các phương thức của Array 
+let length = array.unshift(1,2,3,4); // chèn các phần tử mới vào đầu và trả về độ dài mới của mảng
+console.log(array);
+console.log(length);
+// array.filter(); // sau hàm
+// array.findIndex(); // sau hàm
+// array.forEach(); // sau hàm
+// array.includes(); // kiểm tra phần tử có tồn tại trong mảng hay ko
+let checkExist = arrayString.includes("quả chuối");
+console.log("Quả chuối có tồn tại trong mảng ArrayString hay ko ? ",checkExist);
+
+array.indexOf(); // lấy ra vị trí theo giá trị , trả về -1 nếu giá trị ko tồn tại
+let IndexOfQuaDao = arrayString.indexOf("quả đo"); // vị trí = 2
+console.log( "Vị trí quả đào  = ",IndexOfQuaDao);
+
+array.join(); // nối mảng thành chuỗi 
+console.log(" nối mảng thành chuỗi cách nhau bởi dấu  '-'  : ", array.join("-"));
+
+// array.map(); // sau ham
+array.pop(); // xóa và trả về phần tử cuối cùng của mảng
+// array.reduce(); // sau hàm
+// array.shift(); // lấy và xóa phần tử đầu của mảng
+// array.some(); // sau hàm
+// array.sort(); // sau hàm
+
+    </script>
+</body>
+</html>
