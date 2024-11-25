@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function checkNumber(number) {
+            let count = 0;
+            for (let i = 1; i < number; i++) {
+                if (number % i == 0) {
+                    count++
+                }
+            }
+            if (count == 2) {
+                return true
+            } else {
+                return false
+            }
+        }
+        function show(a, b) {
+            for (let i = a; i <= b; i++) {
+                if (checkNumber(i)) {
+                    console.log(i, "là số nguyên tố");
+                }
+            }
+
+        }
+        show(15,1000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let array =["hoa", "duyen", "hunghhfgj", "trang", "nghiêm"];
+        function check(a) {
+            let max = a[0].length;
+            let index = 0;
+            for (let i = 0; i < a.length; i++) {
+                if (max < a[i].length) {
+                    max = a[i].length;
+                    index = i;
+                }
+            } return index;
+        }
+        console.log("phần tử có độ dài lớn nhất là :" ,array[check(array)]);
+        
+    </script>
+</body>
+
+</html>

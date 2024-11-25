@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let text = "toi yeu viet nam";
+        let split = text.split(" ")
+        let array = [];
+        function upperCase(a) {
+            for (let i = 0; i < a.length; i++) {
+                a[i] = a[i][0].toUpperCase()+
+                a[i].slice(1)
+                array.push(a[i])
+            }
+            return array
+        }
+        upperCase(split)
+        console.log(array);
+
+    </script>
+</body>
+
+</html>

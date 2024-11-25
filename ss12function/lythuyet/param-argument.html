@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //  function hello(a,b){
+      //      console.log("xin chào",a,b); 
+       // }
+     //   hello("hoa",21);
+
+     let emails=[];
+     function checkEmails(email){
+    let includes=emails.includes(email)
+    if(includes==true){
+        emails.push(email)
+        console.log("đắng kí thành công");
+        
+    }else{
+        console.log("tài khoản đã tồn tại");  
+    }
+     }
+     checkEmails(1);
+     checkEmails(2);
+     checkEmails(1);
+    </script>
+</body>
+</html>
