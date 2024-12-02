@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function person(id, name, phone, address) {
+            this.id = id,
+                this.name = name,
+                this.phone = phone,
+                this.address = address
+        }
+        let idprompt = prompt("mời nhập id")
+        let nameprompt = prompt("mời nhập name")
+        let phoneprompt = prompt("mời nhập phone")
+        let addressprompt = prompt("mời nhập address")
+        let your = new person(idprompt, nameprompt, phoneprompt, addressprompt)
+        console.log(your);
+    </script>
+</body>
+
+</html>

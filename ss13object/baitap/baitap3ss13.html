@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+         let array = [];
+        let soluong = +prompt("mời nhập số lượng ");
+        for (let i = 1; i <= soluong; i++) {
+            let idsv = prompt("mời nhập ID sinh viên");
+            let namesv = prompt("mời nhập tên sinh viên");
+            let result = new student(idsv, namesv)
+            array.push(result)
+        }
+        function student(id, name) {
+            this.id = id,
+            this.name = name
+        }
+        console.log(array);
+    </script>
+</body>
+
+</html>
