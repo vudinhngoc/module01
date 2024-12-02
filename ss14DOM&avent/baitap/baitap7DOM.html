@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="cot">
+        <tr>
+            <td>cell 1 row1</td>
+            <td>cell 2 row2</td>
+            <td>cell 3 row3</td>
+        </tr>
+    </table>
+    <button onclick="add()">add row</button>
+    <script>
+        function add() {
+      let a=` <tr>
+            <td>cell 1 row1</td>
+            <td>cell 2 row2</td>
+            <td>cell 3 row3</td>
+        </tr> ${document.getElementById("cot")}`
+        document.getElementById("cot").innerHTML=a;
+    }
+    </script>
+</body>
+</html>

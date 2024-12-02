@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="hi" type="text">
+    <button onclick="show()">add item</button>
+    <ul id="kk">
+        <li>Item1</li>
+        <li>Item123</li>
+    </ul>
+    <script>
+        function show() {
+            let text = `<li>item1</li><li>item123</li><li>${document.getElementById("hi").value}</li>`;
+            document.getElementById("kk").innerHTML = text;
+        }
+    </script>
+</body>
+
+</html>

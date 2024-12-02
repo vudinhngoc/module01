@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .backgroud {
+            background-color: aqua;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>This text is optional</h1>
+    <button onclick="change()">press to say hide text</button>
+    <script>
+        function change() {
+           let text = document.getElementsByTagName("h1")[0];
+            text.classList.toggle("backgroud");
+        }
+        //lsao để khi dùng toggle đổi qua lại nội dung lẫn attibute?? 
+    </script>
+</body>
+
+</html>

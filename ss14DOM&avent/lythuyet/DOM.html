@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #title{
+color: aqua;;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    DOM có 4 thành phần 
+   1.document
+    2.element
+    3.attribute
+    4.text
+    
+    -->
+    
+    <h1>hello</h1>
+    <h1> xin chào</h1>
+    <script>
+//lấy element theo tên thẻ (tagname
+        let getElementsByTagname=document.getElementsByTagName("h1");//
+console.log(getElementsByTagname);//trả về 1 mảng 
+getElementsByTagName[0].id="title";//thêm thuộc tính id cho đối tượng
+
+//lấy element theo id,class
+let getElementbyId=document.getElementById("");//
+let getElementsByCLassName=document.getElementsByClassName("");//trả về 1 mảng
+
+   </script>
+   <p>hello</p>
+   <button onclick="chengeToggle()">click</button>
+   <script>
+    //tương tác với attribute
+//thêm thuộc tính
+    let element=document.getElementsByTagName("p")[0];
+    element.className="title1 title2";
+    
+
+    //xóa thuộc tính:
+    //lấy list các class có trong element
+    console.log(element.classList.add("title3"));//thêm class
+    element.classList.remove("title2");//xóa class
+//// toggle: nếu có thì xóa đi ,không có thì thêm vào
+    function chengeToggle() {
+        element.classList.toggle("title")
+    }
+
+
+   </script>
+</body>
+</html>
