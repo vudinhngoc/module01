@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* head */
+        .head {
+            border: 2px solid black;
+            height: 150px;
+            position: relative;
+            background-color: rgb(217, 245, 239);
+        }
+
+        .title {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 900;
+            color: rgb(165, 35, 35);
+            text-shadow: 1px 1px yellowgreen;
+        }
+
+        .btnOut {
+            position: absolute;
+            right: 10px;
+        }
+
+        .head img {
+            width: 100px;
+            height: 50px;
+        }
+
+        /* head */
+        /* sideBarbody */
+        .sidebar {
+            border: 1px solid black;
+            width: 30%;
+            height: 900px;
+            background-color: rgb(194, 194, 235);
+        }
+
+        .sidebarTable {
+            border: 1px solid black;
+            width: 90%;
+            margin-top: 90px;
+            background-color: rgb(215, 191, 238);
+        }
+
+        .sidebarTable tr td {
+            border: 1px solid black;
+        }
+
+        .sidebarTable td:hover {
+            background-color: rgb(148, 135, 160);
+        }
+
+        /*sideBarbody */
+        .container {
+            display: flex;
+        }
+
+        .main {
+            background-color: aqua;
+            margin-left: 50px;
+            margin-top: 90px;
+            text-align: center;
+            width: 70%;
+        }
+
+        /* course */
+        h1 {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .congcu {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .table th {
+            text-align: center;
+            background-color: rgb(179, 236, 236);
+            border: 1px solid black;
+        }
+
+        table tr td {
+            border: 1px solid rgb(14, 4, 4);
+        }
+
+        .prev {
+            background-color: aqua;
+            width: 800px;
+            position: absolute;
+            right: 0;
+        }
+
+        .prev th td {
+            width: 50px;
+            text-align: center;
+            font-weight: 900;
+        }
+
+        /* addnewbtn */
+        .addnew {
+            border: 1px solid black;
+            width: 100%;
+            position: relative;
+        }
+
+        .btnX {
+            position: absolute;
+            right: 0;
+        }
+
+        .status button {
+            width: 30px;
+            height: 30px;
+        }
+
+        .themdong {
+            position: absolute;
+            right: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <head>
+        <div class="head">
+            <img src="https://media.licdn.com/dms/image/D4E0BAQGBmN1u-mrOXQ/company-logo_200_200/0/1689584597386/rikkeisoft_career_logo?e=2147483647&v=beta&t=zvY-tkt053g4VbAkMZn5fxN-DniOM7tA6NlxjWOe6Hk"
+                alt=""><br>
+            <span>Để nông dân biết code</span>
+            <div class="title">
+                <span>Hệ thống quản lý sinh viên</span>
+            </div>
+            <div class="btnOut">
+                <button onclick="outButton()">đăng xuất</button>
+            </div>
+        </div>
+    </head>
+    <div class="container">
+
+        <body>
+            <!-- sideBar -->
+            <div class="sidebar">
+                <table class="sidebarTable">
+                    <tr>
+                        <td>icon</td>
+                        <td onclick="remoteControl()">bảng điều khiển</td>
+                    </tr>
+                    <tr>
+                        <td>icon</td>
+                        <td onclick="courseManagement()">quản lý khóa học</td>
+                    </tr>
+                    <tr>
+                        <td>icon</td>
+                        <td onclick="classManagement()">quản lý lớp học</td>
+                    </tr>
+                    <tr>
+                        <td>icon</td>
+                        <td>quản lý sinh viên </td>
+                    </tr>
+                    <tr>
+                        <td>icon</td>
+                        <td>quản lý tài khoản</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="main">
+                <!-- đổ  dữ liệu vào đây -->
+
+            </div>
+    </div>
+    <script src="./logout.js"></script>
+    <script src="./cousreManager.js"></script>
+    <script src="./classManager.js"></script> 
+</body>
+</body>
+
+</html>

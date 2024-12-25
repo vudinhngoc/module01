@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 1px solid black;
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            background-color: rgb(210, 236, 236);
+            position: relative;
+        }
+
+        .form {
+            position: absolute;
+            left: 10px;
+            top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <label for="">email</label><br>
+            <input id="email" type="email" placeholder="mời nhập email" required><br>
+            <label for="">password</label><br>
+            <input id="password" type="password" placeholder="password" required><br>
+            <button onclick="getAccount(event)">login</button>
+        </form>
+    </div>
+    <script>
+        function getAccount(e) {
+            e.preventDefault();
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            if (email == "admin@gmail.com" && password == "123456") {
+                location.href = "./page.html";
+            } else {
+                alert("tài khoản không đúng");
+            }
+        }
+    </script>
+</body>
+
+</html>
